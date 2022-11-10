@@ -5,7 +5,7 @@
     <nav>
       <ul>
         <li v-for="(link, index) in links" :key="index">
-          <a href="">{{ link.title }}</a>
+          <a href="" :class="{ active: link.current }">{{ link.title }}</a>
         </li>
       </ul>
     </nav>
@@ -79,6 +79,11 @@ ul {
     text-transform: uppercase;
     margin: 2rem;
     color: black;
+    &:hover {
+      color: $mainblue;
+      border-bottom: 5px solid $mainblue;
+      padding-bottom: 70px;
+    }
   }
 }
 .main-nav {
@@ -86,5 +91,10 @@ ul {
   align-items: center;
   justify-content: space-between;
   margin: 2rem;
+}
+.active {
+  color: $mainblue;
+  border-bottom: 5px solid $mainblue;
+  padding-bottom: 70px;
 }
 </style>
