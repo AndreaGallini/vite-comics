@@ -24,6 +24,7 @@ export default {};
   height: 100px;
   align-items: center;
   background-color: $lightgrey;
+  z-index: 100;
   img {
     margin: 5px;
   }
