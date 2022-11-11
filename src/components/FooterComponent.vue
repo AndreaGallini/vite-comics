@@ -100,6 +100,10 @@ li {
   text-transform: capitalize;
   margin-bottom: 0.3rem;
   list-style: none;
+  cursor: pointer;
+  &:hover {
+    color: white;
+  }
 }
 ul {
   margin: 0 30px;

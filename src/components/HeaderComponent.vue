@@ -77,7 +77,7 @@ ul {
     list-style: none;
     text-decoration: none;
     text-transform: uppercase;
-    margin: 2rem;
+    margin: 1rem;
     color: black;
     &:hover {
       color: $mainblue;
@@ -90,7 +90,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 2rem;
+  margin: 2rem 2rem;
 }
 .active {
   color: $mainblue;

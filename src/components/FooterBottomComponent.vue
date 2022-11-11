@@ -20,7 +20,7 @@ export default {};
 @use "../assets/partials/variable" as *;
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 100px;
   align-items: center;
   background-color: $lightgrey;
@@ -47,5 +47,16 @@ button {
   text-transform: uppercase;
   color: white;
   font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    background-color: $mainblue;
+    color: white;
+  }
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
 }
 </style>
